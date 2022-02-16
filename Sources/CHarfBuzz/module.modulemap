@@ -1,0 +1,7 @@
+module CHarfBuzz [system] {
+	umbrella header "harfbuzz_bridging.h"
+
+	link "harfbuzz"
+
+	export *
+}

@@ -1,0 +1,4 @@
+version: 1
+gir-name: HarfBuzz-0.0
+pkg-config: harfbuzz
+output-directory: Sources/HarfBuzz
