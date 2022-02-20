@@ -1,0 +1,1175 @@
+[1/1] Planning build
+[1/37] Compiling GLib List.swift
+[2/37] Compiling GLib MainLoop.swift
+[3/37] Compiling GLib Memory.swift
+[4/37] Compiling GLib Mutex.swift
+[5/37] Compiling GLib SList.swift
+[6/37] Compiling GLib Sequence.swift
+[7/37] Compiling GLib String.swift
+[8/37] Compiling GLib Time.swift
+[9/37] Compiling GLib ClosureHolder.swift
+[10/37] Compiling GLib Error.swift
+[11/37] Compiling GLib Functions.swift
+[12/37] Compiling GLib GLib-2.0-A.swift
+[13/37] Compiling GLib GLib-2.0-B.swift
+[14/37] Compiling GLib GLib-2.0-C.swift
+[15/37] Compiling GLib GLib-2.0-D.swift
+[16/37] Compiling GLib GLib-2.0-H.swift
+[17/37] Compiling GLib GLib-2.0-I.swift
+[18/37] Compiling GLib GLib-2.0-aliases.swift
+[19/37] Compiling GLib GLib-2.0-bitfields.swift
+[20/37] Compiling GLib GLib-2.0-callbacks.swift
+[21/37] Compiling GLib GLib-2.0-constants.swift
+[22/37] Compiling GLib GLib-2.0-enumerations.swift
+[23/37] Compiling GLib GLib-2.0-functions.swift
+[24/37] Compiling GLib GLib-2.0-unions.swift
+[25/37] Compiling GLib GLib-2.0.swift
+[26/37] Compiling GLib GLib.swift
+[27/37] Compiling GLib GLib-2.0-L.swift
+[28/37] Compiling GLib GLib-2.0-M.swift
+[29/37] Compiling GLib GLib-2.0-O.swift
+[30/37] Compiling GLib GLib-2.0-P.swift
+[31/37] Compiling GLib GLib-2.0-R.swift
+[32/37] Compiling GLib GLib-2.0-S.swift
+[33/37] Compiling GLib GLib-2.0-T.swift
+[34/37] Compiling GLib GLib-2.0-U.swift
+[35/37] Compiling GLib GLib-2.0-V.swift
+[37/39] Merging module GLib
+/home/mikolas/Developer/SwiftHarfBuzz/.build/checkouts/SwiftGObject/Sources/GObjectCHelpers/gobject_helpers.c:7:12: warning: incompatible integer to pointer conversion returning 'GType' (aka 'unsigned long') from a function with result type 'GTypeClass *' (aka 'struct _GTypeClass *') [-Wint-conversion]
+    return G_TYPE_FROM_INSTANCE(gobject);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:602:65: note: expanded from macro 'G_TYPE_FROM_INSTANCE'
+#define G_TYPE_FROM_INSTANCE(instance)                          (G_TYPE_FROM_CLASS (((GTypeInstance*) (instance))->g_class))
+                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[39/40] Compiling GObjectCHelpers glib_value.c
+[40/40] Compiling GObjectCHelpers gobject_helpers.c
+[41/68] Compiling GLibObject GObject-2.0-constants.swift
+[42/68] Compiling GLibObject GObject-2.0-enumerations.swift
+[43/68] Compiling GLibObject GObject-2.0-functions.swift
+[44/68] Compiling GLibObject GObject-2.0-unions.swift
+[45/68] Compiling GLibObject GObject-2.0.swift
+[46/68] Compiling GLibObject ParamSpec.swift
+[47/68] Compiling GLibObject WeakObject.swift
+[48/68] Compiling GLibObject GLibNotify.swift
+[49/68] Compiling GLibObject GLibObject.swift
+[50/68] Compiling GLibObject GLibSignal.swift
+[51/68] Compiling GLibObject GLibType.swift
+[52/68] Compiling GLibObject GLibValue.swift
+[53/68] Compiling GLibObject GObject-2.0-Binding-InitiallyUnowned.swift
+[54/68] Compiling GLibObject GObject-2.0-CClosure-EnumClass.swift
+[55/68] Compiling GLibObject GObject-2.0-SignalQuery-TypeClass.swift
+[56/68] Compiling GLibObject GObject-2.0-TypeFundamentalInfo-Value.swift
+[57/68] Compiling GLibObject GObject-2.0-TypePlugin-TypePlugin.swift
+[58/68] Compiling GLibObject GObject-2.0-ValueArray-WeakRef.swift
+[59/68] Compiling GLibObject GObject-2.0-aliases.swift
+[60/68] Compiling GLibObject GObject-2.0-bitfields.swift
+[61/68] Compiling GLibObject GObject-2.0-callbacks.swift
+[62/68] Compiling GLibObject GObject-2.0-EnumValue-FlagsClass.swift
+[63/68] Compiling GLibObject GObject-2.0-FlagsValue-InitiallyUnownedClass.swift
+[64/68] Compiling GLibObject GObject-2.0-InterfaceInfo-ObjectClass.swift
+[65/68] Compiling GLibObject GObject-2.0-Object-ParamSpec.swift
+[66/68] Compiling GLibObject GObject-2.0-ObjectConstructParam-ParamSpecClass.swift
+[67/68] Compiling GLibObject GObject-2.0-ParamSpecBoolean-TypeModule.swift
+[68/68] Compiling GLibObject GObject-2.0-ParamSpecPool-SignalInvocationHint.swift
+[70/70] Merging module GLibObject
+[72/87] Compiling HarfBuzz HarfBuzz-0.0-unions.swift
+[73/87] Compiling HarfBuzz HarfBuzz-0.0-user_data_key_t-variation_t.swift
+[74/87] Compiling HarfBuzz HarfBuzz-0.0.swift
+[75/87] Compiling HarfBuzz HarfBuzz.swift
+[76/87] Compiling HarfBuzz HarfBuzz-0.0-glyph_info_t-language_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:953:40: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'hb_language_t?' (aka 'Optional<OpaquePointer>')
+        let rv = hb_language_to_string(_ptr).map({ String(cString: $0) })
+                                       ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'UnsafeMutablePointer<hb_language_t?>?' (aka 'Optional<UnsafeMutablePointer<Optional<OpaquePointer>>>')
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: note: arguments to generic parameter 'Pointee' ('hb_language_t' (aka 'OpaquePointer') and 'hb_language_t?' (aka 'Optional<OpaquePointer>')) are expected to be equal
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                ^
+            guard                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                           ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                          !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                ^
+            guard                                                    else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+[77/87] Compiling HarfBuzz HarfBuzz-0.0-map_t-ot_color_layer_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:953:40: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'hb_language_t?' (aka 'Optional<OpaquePointer>')
+        let rv = hb_language_to_string(_ptr).map({ String(cString: $0) })
+                                       ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'UnsafeMutablePointer<hb_language_t?>?' (aka 'Optional<UnsafeMutablePointer<Optional<OpaquePointer>>>')
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: note: arguments to generic parameter 'Pointee' ('hb_language_t' (aka 'OpaquePointer') and 'hb_language_t?' (aka 'Optional<OpaquePointer>')) are expected to be equal
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                ^
+            guard                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                           ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                          !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                ^
+            guard                                                    else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+[78/87] Compiling HarfBuzz HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:953:40: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'hb_language_t?' (aka 'Optional<OpaquePointer>')
+        let rv = hb_language_to_string(_ptr).map({ String(cString: $0) })
+                                       ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'UnsafeMutablePointer<hb_language_t?>?' (aka 'Optional<UnsafeMutablePointer<Optional<OpaquePointer>>>')
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: note: arguments to generic parameter 'Pointee' ('hb_language_t' (aka 'OpaquePointer') and 'hb_language_t?' (aka 'Optional<OpaquePointer>')) are expected to be equal
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                ^
+            guard                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                           ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                          !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                ^
+            guard                                                    else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+[79/87] Compiling HarfBuzz HarfBuzz-0.0-set_t-unicode_funcs_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:953:40: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'hb_language_t?' (aka 'Optional<OpaquePointer>')
+        let rv = hb_language_to_string(_ptr).map({ String(cString: $0) })
+                                       ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: error: cannot convert value of type 'UnsafeMutablePointer<hb_language_t>?' (aka 'Optional<UnsafeMutablePointer<OpaquePointer>>') to expected argument type 'UnsafeMutablePointer<hb_language_t?>?' (aka 'Optional<UnsafeMutablePointer<Optional<OpaquePointer>>>')
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-glyph_info_t-language_t.swift:960:75: note: arguments to generic parameter 'Pointee' ('hb_language_t' (aka 'OpaquePointer') and 'hb_language_t?' (aka 'Optional<OpaquePointer>')) are expected to be equal
+        hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, _ptr)
+                                                                          ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                ^
+            guard                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                           ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:923:35: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = _ptr.pointee.language
+                                  ^
+                                          !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:924:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+            return rv
+                   ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:17: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                ^
+            guard                                                    else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2004:61: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            let rv = gobject_segment_properties_ptr.pointee.language
+                                                            ^
+                                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+            return rv
+                   ^
+                      ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-ot_math_glyph_part_t-segment_properties_t.swift:2005:20: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+            return rv
+                   ^
+                     !
+[80/87] Compiling HarfBuzz HarfBuzz-0.0-aliases.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+            ^
+        guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                            ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                           !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+[81/87] Compiling HarfBuzz HarfBuzz-0.0-bitfields.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+            ^
+        guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                            ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                           !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+[82/87] Compiling HarfBuzz HarfBuzz-0.0-blob_t-face_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+            ^
+        guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                            ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                           !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+[83/87] Compiling HarfBuzz HarfBuzz-0.0-callbacks.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+            ^
+        guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                            ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:811:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_buffer_get_language(gobject_buffer_ptr)
+                 ^
+                                                           !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-blob_t-face_t.swift:812:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+[84/87] Compiling HarfBuzz HarfBuzz-0.0-constants.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-constants.swift:17:31: error: cannot find 'HB_LANGUAGE_INVALID' in scope
+public let LANGUAGE_INVALID = HB_LANGUAGE_INVALID // 0
+                              ^~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+            ^
+        guard                                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+            ^
+        guard                                           else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+        ^
+    guard                                                      else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                               ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                              !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+        ^
+    guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+        ^
+    guard                                                else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                         ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                        !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+        ^
+    guard                                            else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+        ^
+    guard                              else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+        ^
+    guard                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3273:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3279:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[85/87] Compiling HarfBuzz HarfBuzz-0.0-enumerations.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-constants.swift:17:31: error: cannot find 'HB_LANGUAGE_INVALID' in scope
+public let LANGUAGE_INVALID = HB_LANGUAGE_INVALID // 0
+                              ^~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+            ^
+        guard                                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+            ^
+        guard                                           else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+        ^
+    guard                                                      else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                               ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                              !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+        ^
+    guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+        ^
+    guard                                                else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                         ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                        !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+        ^
+    guard                                            else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+        ^
+    guard                              else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+        ^
+    guard                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3273:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3279:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[86/87] Compiling HarfBuzz HarfBuzz-0.0-feature_t-glyph_extents_t.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-constants.swift:17:31: error: cannot find 'HB_LANGUAGE_INVALID' in scope
+public let LANGUAGE_INVALID = HB_LANGUAGE_INVALID // 0
+                              ^~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+            ^
+        guard                                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+            ^
+        guard                                           else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+        ^
+    guard                                                      else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                               ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                              !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+        ^
+    guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+        ^
+    guard                                                else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                         ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                        !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+        ^
+    guard                                            else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+        ^
+    guard                              else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+        ^
+    guard                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3273:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3279:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[87/87] Compiling HarfBuzz HarfBuzz-0.0-functions.swift
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-constants.swift:17:31: error: cannot find 'HB_LANGUAGE_INVALID' in scope
+public let LANGUAGE_INVALID = HB_LANGUAGE_INVALID // 0
+                              ^~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+            ^
+        guard                                          else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1953:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_get_face(gobject_font_ptr)
+                 ^
+                                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1954:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+        return rv
+               ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:13: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+            ^
+        guard                                           else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1967:18: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        let rv = hb_ft_font_lock_face(gobject_font_ptr)
+                 ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+        return rv
+               ^
+                  ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-feature_t-glyph_extents_t.swift:1968:16: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+        return rv
+               ^
+                 !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+        ^
+    guard                                                      else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                               ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:389:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_buffer_get_language(buffer.gobject_buffer_ptr)
+             ^
+                                                              !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:390:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+        ^
+    guard                                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2202:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_get_face(font.gobject_font_ptr)
+             ^
+                                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2203:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: error: value of optional type 'FT_Face?' (aka 'Optional<UnsafeMutablePointer<FT_FaceRec_>>') must be unwrapped to a value of type 'FT_Face' (aka 'UnsafeMutablePointer<FT_FaceRec_>')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+        ^
+    guard                                                else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                         ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2222:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ft_font_lock_face(font.gobject_font_ptr)
+             ^
+                                                        !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2223:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+        ^
+    guard                                            else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                     ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2346:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_from_string(str, gint(len))
+             ^
+                                                    !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2347:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+        ^
+    guard                              else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                       ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2362:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_language_get_default()
+             ^
+                                      !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:2363:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: error: value of optional type 'hb_language_t?' (aka 'Optional<OpaquePointer>') must be unwrapped to a value of type 'hb_language_t' (aka 'OpaquePointer')
+    return rv
+           ^
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:9: note: short-circuit using 'guard' to exit this function early if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+        ^
+    guard                               else { return <#default value#> }
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                        ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3238:14: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    let rv = hb_ot_tag_to_language(tag)
+             ^
+                                       !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: coalesce using '??' to provide a default when the optional value contains 'nil'
+    return rv
+           ^
+              ?? <#default value#>
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3239:12: note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+    return rv
+           ^
+             !
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3273:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/mikolas/Developer/SwiftHarfBuzz/Sources/HarfBuzz/HarfBuzz-0.0-functions.swift:3279:5: error: type of expression is ambiguous without more context
+    hb_ot_tags_to_script_and_language(scriptTag, languageTag, script, language?._ptr)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

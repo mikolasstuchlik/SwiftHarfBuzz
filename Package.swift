@@ -9,6 +9,8 @@ let package = Package(
         .library(name: "HarfBuzz", targets: ["HarfBuzz"]),
     ],
     dependencies: [
+        .package(name: "gir2swift", url: "https://github.com/mikolasstuchlik/gir2swift.git", .branch("development")),
+        .package(name: "GLibObject", url: "https://github.com/mikolasstuchlik/SwiftGObject.git", .branch("development")),
     ],
     targets: [
         .systemLibrary(
@@ -21,11 +23,8 @@ let package = Package(
             ),
         .target(
             name: "HarfBuzz",
-            dependencies: ["CHarfBuzz"],
+            dependencies: ["CHarfBuzz", "GLibObject"],
             swiftSettings: [.unsafeFlags(["-Xfrontend", "-serialize-debugging-options"], .when(configuration: .debug))]
-        ),
-        .testTarget(
-            name: "HarfBuzzTests",
-            dependencies: ["HarfBuzz"]),
+        )
     ]
 )
